@@ -7,7 +7,7 @@ if (process.argv.length < 7)
 
 const meetingDate = Temporal.PlainDate.from(process.argv[2]);
 const meetingTime = Temporal.PlainTime.from(process.argv[3]);
-const meetingDuration = Temporal.Duration.from(process.argv[4]);
+const meetingDuration = Temporal.Duration.from(`PT${process.argv[4]}`);
 const timeZones = process.argv.slice(5).map(Temporal.TimeZone.from);
 const mainTimeZone = timeZones[0];
 const ourLocale = 'en-US';
