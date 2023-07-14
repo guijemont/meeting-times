@@ -1,0 +1,15 @@
+{
+  "name": "meeting-times",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.mjs",
+  "bin": "./index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guillaume Emont",
+  "license": "MIT",
+  "dependencies": {
+    "@js-temporal/polyfill": "^0.4.4"
+  }
+}
