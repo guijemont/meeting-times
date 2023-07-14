@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// Copyright © Igalia, S.L. 2023
 
 import { Temporal } from "@js-temporal/polyfill"
 
@@ -17,6 +18,7 @@ const meetingStart = meetingDate.toZonedDateTime({
     plainTime: meetingTime,
 });
 
+// these next 3 functions modified from https://git.disroot.org/ryzokuken/tc39-times
 function localSpan (tz) {
     const time = meetingStart.withTimeZone(tz);
     return [time, time.add(meetingDuration)];
